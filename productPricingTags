@@ -1,0 +1,153 @@
+{% if product.has_only_default_variant %}
+    {% if product.type == "Fruit" or product.type == "Vegetables" %}
+      {% if product.tags contains "#bunch"  %}
+        {{ 'product.item.price.bunch_html' | t: price: price_html | strip_newlines }}
+
+      {% elsif product.tags contains "#bag" %}
+        {{ 'product.item.price.bag_html' | t: price: price_html | strip_newlines }}
+
+      {% elsif product.tags contains "#each" %}
+        {{ 'product.item.price.each_html' | t: price: price_html | strip_newlines }}
+
+        {% elsif product.tags contains "#punnet" %}
+          {{ 'product.item.price.punnet_html' | t: price: price_html | strip_newlines }}
+
+          {% elsif product.tags contains "#banana" %}
+            {{ 'product.item.price.banana_html' | t: price: price_html | strip_newlines }}
+
+      {% elsif product.tags contains "#none" %}
+        {{ 'product.item.price.none_html' | t: price: price_html | strip_newlines }}
+
+      {% elsif product.tags contains "#for2" %}
+        {{ 'product.item.price.for2_html' | t: price: price_html | strip_newlines }}
+
+      {% elsif product.tags contains "#for3" %}
+        {{ 'product.item.price.for3_html' | t: price: price_html | strip_newlines }}
+
+        {% elsif product.tags contains "#for4" %}
+          {{ 'product.item.price.for4_html' | t: price: price_html | strip_newlines }}
+
+        {% elsif product.tags contains "#for5" %}
+          {{ 'product.item.price.for5_html' | t: price: price_html | strip_newlines }}
+
+          {% elsif product.tags contains "#for6" %}
+            {{ 'product.item.price.for6_html' | t: price: price_html | strip_newlines }}
+
+        {% elsif product.tags contains "#for2bunch" %}
+          {{ 'product.item.price.for2_bunch_html' | t: price: price_html | strip_newlines }}
+
+        {% elsif product.tags contains "#for3bunch" %}
+          {{ 'product.item.price.for3_bunch_html' | t: price: price_html | strip_newlines }}
+
+          {% elsif product.tags contains "#for2bag" %}
+            {{ 'product.item.price.for2_bag_html' | t: price: price_html | strip_newlines }}
+
+          {% elsif product.tags contains "#for3bag" %}
+            {{ 'product.item.price.for3_bag_html' | t: price: price_html | strip_newlines }}
+
+            {% elsif product.tags contains "#for2punnet" %}
+              {{ 'product.item.price.for2_punnet_html' | t: price: price_html | strip_newlines }}
+
+            {% elsif product.tags contains "#for3punnet" %}
+              {{ 'product.item.price.for3_punnet_html' | t: price: price_html | strip_newlines }}
+
+      {% elsif product.tags contains "#kg" %}
+          {{ 'product.item.price.kg_html' | t: price: price_html | strip_newlines }}
+
+      {% elsif product.tags contains "#box" %}
+              {{ 'product.item.price.box_html' | t: price: price_html | strip_newlines }}
+
+
+        {% elsif product.tags contains "#hamper" %}
+          {{ 'product.item.price.ham#html' | t: price: price_html | strip_newlines }}
+
+
+          {% elsif product.tags contains "#platter" %}
+            {{ 'product.item.price.platter_html' | t: price: price_html | strip_newlines }}
+
+          {% elsif product.tags contains "#container" %}
+            {{ 'product.item.price.container_html' | t: price: price_html | strip_newlines }}
+
+    {% elsif product.tags contains "#bottle" %}
+        {{ 'product.item.price.bottle_html' | t: price: price_html | strip_newlines }}
+
+    {% elsif product.tags contains "#basket" %}
+            {{ 'product.item.price.basket_html' | t: price: price_html | strip_newlines }}
+
+      {% elsif product.tags contains "#weight" %}
+
+           {% for variant in product.variants %}
+             {% if variant.weight != 0 %}
+             {% unless variant.weight == blank %}
+                {% if variant.weight >= 1000 %}
+                {{ price_html }} <span class="price--label">/ {{variant.weight | weight_with_unit }}</span>
+                {% else if variant.weight < 1000 %}
+                {{ price_html }} <span class="price--label">/ {{variant.weight }}g</span>
+                {% endif %}
+                {% endunless %}
+              {% endif %}
+            {% endfor %}
+
+
+        {% elsif product.tags contains "#from" %}
+            {{ 'product.item.price.range_html' | t: price: price_html | strip_newlines }}
+
+          {% else %}
+            {{ 'product.item.price.each_html' | t: price: price_html | strip_newlines }}
+
+          {% endif %}
+        {% else %}
+          {{ 'product.item.price.each_html' | t: price: price_html | strip_newlines }}
+    {% endif %}
+
+  {% elsif price_varies %}
+    {{ 'product.item.price.range_html' | t: price: price_html | strip_newlines }}
+  {% else %}
+    {{ price_html }}
+{% endif %}
+
+
+
+
+ {% comment %}
+//Notes for current code
+Default all items say (e.g. $10.00 each)
+If you want to get more specific then you will add these tags to the product and it will over ride the Default price text;
+#bunch (e.g. $10.00 bunch)
+#bag (e.g. $10.00 bag)
+#punnet (e.g. $10.00 punnet)
+#kg (e.g. $10.00 per kg)
+#weight (e.g. $10.00 / 1kg) Must have weight in Shipping weight section in kg
+#each (e.g. $10.00 each)
+#from (e.g. from $10.00)
+#banana (e.g. $10.00 per banana)
+#box (e.g. $10.00 per box)
+#hamper (e.g. $10.00 per hamper)
+#platter (e.g. $10.00 per platter)
+#container (e.g. $10.00 per container)
+#bottle (e.g. $10.00 per bottle)
+#basket (e.g. $10.00 per basket)
+#none (e.g. $10.00)
+#for2 (e.g. $10.00 for 2)
+#for3 (e.g. $10.00 for 3)
+#for4 (e.g. $10.00 for 4)
+#for5 (e.g. $10.00 for 5)
+#for6 (e.g. $10.00 for 6)
+#for2bunch (e.g. $10.00 for 2 bunches)
+#for3bunch (e.g. $10.00 for 3 bunches)
+#for2bag (e.g. $10.00 for 2 bags)
+#for3bag (e.g. $10.00 for 3 bags)
+#for2punnet (e.g. $10.00 for 2 punnets)
+#for3punnet (e.g. $10.00 for 3 punnets)
+
+//Original code
+{% if price_varies %}
+  {{ 'product.item.price.range_html' | t: price: price_html | strip_newlines }}
+{% else %}
+  {{ price_html }}
+{% endif %}
+
+//Added this to product-grid-tags.liquid to not show in tags on collection page
+{%unless tag contains '#' %}
+{%endunless%}
+{% endcomment %}

@@ -1,0 +1,48 @@
+<html>
+<input id="emoji-icon-search" type="text" placeholder="">
+</html>
+
+
+<script>
+// selecting a random array item for search bar placeholder
+  //🍏🍎🍐🍊🍋🍌🍉🍇🍓🍈🍒🍑🍍🥥🥝🍅🍆🥑🥦🥒🌶🌽🥕🥔🍠🍞🧀🥚🥫🥗🍿🥛🥜🍯🍨🍝
+var selectFruit = [
+  "Try searching for bananas 🍌",
+  "Try searching watermelon 🍉",
+  "Try searching citrus 🍋",
+  "Try searching dairy or eggs 🥚 ",
+  "Try searching strawberries 🍓",
+  "Try searching cucumbers 🥒",
+  "Try searching potatoes 🥔",
+  "Try searching bread 🍞",
+  "Try searching milk 🥛",
+  "Try searching pasta 🍝",
+  "Try searching honey 🍯",
+  "Try searching ice cream 🍨",
+  "Try searching popcorn 🍿",
+  "Try searching stone fruit 🍑",
+  "Try searching apples 🍎",
+  "Try searching pears 🍐",
+  "Try searching oranges 🍊",
+  "Try searching grapes 🍇",
+  "Try searching melon 🍈",
+  "Try searching cherries 🍒",
+  "Try searching chilli 🌶",
+  "Try searching corn 🌽",
+  "Try searching carrots 🥕",
+  "Try searching nuts 🥜",
+  "Try searching mushrooms 🍄 ",
+  "Try searching kiwi fruit 🥝",
+  "Try searching eggplant 🍆",
+  "Try searching tomatoes 🍅",
+  "Try searching avocados 🥑",
+  "Try searching broccoli 🥦"
+];
+
+var pickAFruit = function() {
+    var todaysFruit = selectFruit[Math.floor(Math.random() * selectFruit.length)];
+    document.getElementById("emoji-icon-search").placeholder = todaysFruit;
+};
+
+pickAFruit();
+</script>

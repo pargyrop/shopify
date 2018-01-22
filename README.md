@@ -24,15 +24,15 @@ Add a list of items such as in a recipe to the cart from blog page on Shopify.
 
 #### How to do this
 
-1. Create a snippet in Shopify with
+1. Create a snippet in Shopify with [a relative link](recipe-to-cart.liquid)
 2. Add this to your article page code where ever you want it
 ```
 {% include 'recipe-to-cart' %}
 ```
 3. On the article editer you can edit the code and past the following
-4. Then add the variant_id, product_id and quantity - [How to fine these values](https://support.qooqee.com/hc/en-us/articles/115004589708-How-to-Find-Shopify-Product-ID-Number)
+4. Then add the variant_id, product_id and quantity - [How to fine these values](https://www.youtube.com/watch?v=42_4oP33euk)
 
-### Redirect to Checkout Page
+### Permalink - Redirect to Checkout Page
 [Shopify Support](https://help.shopify.com/themes/customization/cart/use-permalinks-to-preload-cart) - Use permalinks to pre-load the cart
 
 ```
@@ -42,7 +42,7 @@ http://yourstore.com/cart/#{variant_id}:#{quantity}(,...)
 http://your-store.myshopify.com/cart/70881412:1,70881382:1
 ```
 
-### Redirect to Cart Page
+### Form - Redirect to Cart Page
 [Freakdesign Blog](https://freakdesign.com.au/blogs/news/add-multiple-products-to-cart-without-permalinks) - How to add multiple products to a Shopify cart without permalinks
 
 ```

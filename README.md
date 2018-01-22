@@ -24,7 +24,7 @@ Add a list of items such as in a recipe to the cart from blog page on Shopify.
 * Can change the quantity of each item (Which you can't do with Permalinks)
 
 ### Redirect to Checkout Page
-* [Shopify Support](https://help.shopify.com/themes/customization/cart/use-permalinks-to-preload-cart) - Use permalinks to pre-load the cart
+[Shopify Support](https://help.shopify.com/themes/customization/cart/use-permalinks-to-preload-cart) - Use permalinks to pre-load the cart
 
 ```
 http://yourstore.com/cart/#{variant_id}:#{quantity}(,...)
@@ -34,7 +34,7 @@ http://your-store.myshopify.com/cart/70881412:1,70881382:1
 ```
 
 ### Redirect to Cart Page
-* [Freakdesign Blog](https://freakdesign.com.au/blogs/news/add-multiple-products-to-cart-without-permalinks) - How to add multiple products to a Shopify cart without permalinks
+[Freakdesign Blog](https://freakdesign.com.au/blogs/news/add-multiple-products-to-cart-without-permalinks) - How to add multiple products to a Shopify cart without permalinks
 
 ```
 http://yourstore.com/cart/add?id[]=#{variant_id}&id[]=#{variant_id}

@@ -1,0 +1,57 @@
+{% comment %}
+https://freakdesign.com.au/blogs/news/129660999-how-to-create-a-button-to-let-customers-repeat-their-previous-order
+{% include 'recipe-to-cart' %}
+{% endcomment %}
+
+
+       <script>
+      (function(){
+        /* Check for the button */
+        var buttonOrder = document.getElementsByClassName('recipe-order') || false;
+        if(!buttonOrder){ return }
+
+        /* Simple function to check the queue */
+        var checkQueue = function(){
+          order.items.shift();
+          if(order.items.length){
+            orderItems()
+          }else{
+            window.location.href = '/cart';
+          }
+        };
+        /* Simple function add to cart */
+        var orderItems = function(){
+          if(!order.items.length){ return }
+          if(!order.items[0].available){
+            checkQueue();
+          }
+          var request = new XMLHttpRequest();
+          request.open('post', '/cart/add.js', true);
+          request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+          request.onload = function() {
+            var resp = request.responseText;
+            if (request.status >= 200 && request.status < 400) {
+              checkQueue();
+            } else { /* add your error handling in here */ }
+          };
+          request.onerror = function() {
+            /* add your error handling in here */
+          };
+          request.send(JSON.stringify({
+            'quantity':order.items[0].quantity,
+            'id':order.items[0].variant_id
+          }));
+
+        };
+        buttonOrder[0].addEventListener("click", function (event) {
+          event.preventDefault();
+          /* Get the button we just clicked */
+          var t = event.target || event.srcElement;
+          /* Very simple method to stop a double click. You should make something fancier. */
+          t.setAttribute('disabled','disabled');
+          t.innerHTML = 'Adding to cart...';
+          /* Fire the function that adds to cart */
+          orderItems();
+        });
+      })();
+    </script>

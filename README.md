@@ -24,7 +24,7 @@ Add a list of items such as in a recipe to the cart from blog page on Shopify.
 
 #### How to do this
 
-1. Create a snippet in Shopify with [a relative link](recipe-to-cart.liquid)
+1. Create a snippet in Shopify with [a relative link](shopify/Blog_Recipe_to_Cart/recipe-to-cart.liquid)
 2. Add this to your article page code where ever you want it
 ```
 {% include 'recipe-to-cart' %}

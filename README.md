@@ -33,7 +33,7 @@ Add a list of items such as in a recipe to the cart from blog page on Shopify.
 
 3. On the article editer you can edit the code and past the following - [link](Blog_Recipe_to_Cart/blog-content-section.html)
 
-4. Then add the variant_id, product_id and quantity - [How to fine these values](https://www.youtube.com/watch?v=42_4oP33euk)
+4. Then add the variant_id, product_id and quantity - [How to fine these values](https://www.youtube.com/watch?v=42_4oP33euk) or use [ShopifyFD](https://freakdesign.com.au/pages/shopifyfd)
 
 5. A button will be placed on your article so the reader can add the items to the cart
 

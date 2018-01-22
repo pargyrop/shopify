@@ -22,6 +22,8 @@ Add a list of items such as in a recipe to the cart from blog page on Shopify.
 
 [Freakdesign Blog](https://freakdesign.com.au/blogs/news/129660999-how-to-create-a-button-to-let-customers-repeat-their-previous-order) - How to create a button to let customers repeat their previous order
 
+#### How to do this
+
 1. Create a snippet in Shopify with
 2. Add this to your article page code where ever you want it
 ```

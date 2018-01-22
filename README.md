@@ -1,7 +1,5 @@
 # Shopify
 
-# Awesome README [![Awesome]
-
 Some code I have put together when editing the empire theme on Shopify
 
 ### Table of content
@@ -69,7 +67,7 @@ http://your-store.myshopify.com/cart/add?id[]=70881412&id[]=70881382
 
 ## Search Placeholder Random Text
 
-Selects a random array item for search bar placeholder from an array.
+Selects a random array item for search bar placeholder from an array. - [link](Search_Placeholder_Random)
 
 ```
 Try searching for bananas 🍌
@@ -80,6 +78,40 @@ Try searching dairy or eggs 🥚
 
 ![alt text](https://github.com/pargyrop/shopify/blob/master/Search_Placeholder_Random/searchPlaceholderRandomText.gif)
 
+
+## Product Price Label Changed with Tags
+
+If you want to get more specific then you will add these tags to the product and it will over ride the default price text, which i have set to '$10.00 each'. - [link](Product_Price_Label_with_Tags)
+
+```
+Default all product prices say (e.g. $10.00 each)
+#bunch (e.g. $10.00 bunch)
+#bag (e.g. $10.00 bag)
+#punnet (e.g. $10.00 punnet)
+#kg (e.g. $10.00 per kg)
+#weight (e.g. $10.00 / 1kg) Must have weight in Shipping weight section in kg
+#each (e.g. $10.00 each)
+#from (e.g. from $10.00)
+#banana (e.g. $10.00 per banana)
+#box (e.g. $10.00 per box)
+#hamper (e.g. $10.00 per hamper)
+#platter (e.g. $10.00 per platter)
+#container (e.g. $10.00 per container)
+#bottle (e.g. $10.00 per bottle)
+#basket (e.g. $10.00 per basket)
+#none (e.g. $10.00)
+#for2 (e.g. $10.00 for 2)
+#for3 (e.g. $10.00 for 3)
+#for4 (e.g. $10.00 for 4)
+#for5 (e.g. $10.00 for 5)
+#for6 (e.g. $10.00 for 6)
+#for2bunch (e.g. $10.00 for 2 bunches)
+#for3bunch (e.g. $10.00 for 3 bunches)
+#for2bag (e.g. $10.00 for 2 bags)
+#for3bag (e.g. $10.00 for 3 bags)
+#for2punnet (e.g. $10.00 for 2 punnets)
+#for3punnet (e.g. $10.00 for 3 punnets)
+```
 
 
 ## More Cool Shopify Tricks

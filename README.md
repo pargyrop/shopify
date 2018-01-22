@@ -9,8 +9,6 @@ Some code I have put together when editing the empire theme on Shopify
 - [More Cool Shopify Tricks](#more-cool-shopify-tricks)
 - [Credits](#credits)
 
-#
-
 
 ## Blog Recipe to Cart
 
@@ -47,7 +45,7 @@ http://yourstore.com/cart/#{variant_id}:#{quantity}(,...)
 http://your-store.myshopify.com/cart/70881412:1,70881382:1
 ```
 
-### Form - Redirect to Cart Page
+### URL Form - Redirect to Cart Page
 [Freakdesign Blog](https://freakdesign.com.au/blogs/news/add-multiple-products-to-cart-without-permalinks) - How to add multiple products to a Shopify cart without permalinks
 
 ```
@@ -55,6 +53,14 @@ http://yourstore.com/cart/add?id[]=#{variant_id}&id[]=#{variant_id}
 ```
 ```
 http://your-store.myshopify.com/cart/add?id[]=70881412&id[]=70881382
+```
+
+### Form - Redirect to Cart Page
+```
+<form class="product-form" action="/cart/add" data-productid="{{product.id}}"  method="post">
+  <input type="hidden" name="id" data-productid="{{product.id}}" class="product-select" value="{{ product.variants[0].id }}" data-variant-title="{{ product.variants[0].title }}" />
+  <input type="submit" value="Add To Cart" class="btn btn btn-default" />
+</form>
 ```
 
 

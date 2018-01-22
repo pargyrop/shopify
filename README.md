@@ -8,7 +8,7 @@ Some code I have put together when editing the empire theme on Shopify
 * [Freak Design](https://freakdesign.com.au/) - Great place to get some sneaky tips
 
 
-## Table of content
+### Table of content
 
 - [Blog Recipe to Cart](#blog-recipe-to-cart)
 - [Search Placeholder Random Text](#search-placeholder-random-text)

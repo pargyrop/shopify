@@ -1,0 +1,31 @@
+"product": {
+     "price": {
+       "_comment": "Add these items to your en.default.json",
+       "price_html": "{{ price }}",
+       "range_html": "<span class=\"price--label\">from<\/span> {{ price }}",
+       "each_html": "{{ price }} <span class=\"price--label\">each<\/span>",
+       "kg_html": "{{ price }} <span class=\"price--label\">per kg<\/span>",
+       "bunch_html": "{{ price }} <span class=\"price--label\">per bunch<\/span>",
+       "bag_html": "{{ price }} <span class=\"price--label\">per bag<\/span>",
+       "punnet_html": "{{ price }} <span class=\"price--label\">per punnet<\/span>",
+       "banana_html": "{{ price }} <span class=\"price--label\">per banana<\/span>",
+       "box_html": "{{ price }} <span class=\"price--label\">per box<\/span>",
+       "hamper_html": "{{ price }} <span class=\"price--label\">per hamper<\/span>",
+       "platter_html": "{{ price }} <span class=\"price--label\">per platter<\/span>",
+       "container_html": "{{ price }} <span class=\"price--label\">per container<\/span>",
+       "bottle_html": "{{ price }} <span class=\"price--label\">per bottle<\/span>",
+       "basket_html": "{{ price }} <span class=\"price--label\">per basket<\/span>",
+       "for2_html": "{{ price }} <span class=\"price--label\">for 2<\/span>",
+       "for3_html": "{{ price }} <span class=\"price--label\">for 3<\/span>",
+       "for4_html": "{{ price }} <span class=\"price--label\">for 4<\/span>",
+       "for5_html": "{{ price }} <span class=\"price--label\">for 5<\/span>",
+       "for6_html": "{{ price }} <span class=\"price--label\">for 6<\/span>",
+       "for2_bag_html": "{{ price }} <span class=\"price--label\">for 2 bags<\/span>",
+       "for3_bag_html": "{{ price }} <span class=\"price--label\">for 3 bags<\/span>",
+       "for2_bunch_html": "{{ price }} <span class=\"price--label\">for 2 bunches<\/span>",
+       "for3_bunch_html": "{{ price }} <span class=\"price--label\">for 3 bunches<\/span>",
+       "for2_punnet_html": "{{ price }} <span class=\"price--label\">for 2 punnets<\/span>",
+       "for3_punnet_html": "{{ price }} <span class=\"price--label\">for 3 punnets<\/span>"
+     }
+   }
+ },

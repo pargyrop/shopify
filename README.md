@@ -24,18 +24,17 @@ Add a list of items such as in a recipe to the cart from blog page on Shopify.
 [Freakdesign Blog](https://freakdesign.com.au/blogs/news/129660999-how-to-create-a-button-to-let-customers-repeat-their-previous-order) - How to create a button to let customers repeat their previous order
 
 #### How to do this
-<<<<<<< HEAD
 1. Create a snippet in Shopify and place this in it - [link](Blog_Recipe_to_Cart/recipe-to-cart.liquid)
-=======
 
-1. Create a snippet in Shopify with [a relative link](Blog_Recipe_to_Cart/recipe-to-cart.liquid)
->>>>>>> 3bdcf2938401d6e7b08396580732960ab039fbe5
 2. Add this to your article page code where ever you want it
 ```
 {% include 'recipe-to-cart' %}
 ```
+
 3. On the article editer you can edit the code and past the following - [link](Blog_Recipe_to_Cart/blog-content-section.html)
+
 4. Then add the variant_id, product_id and quantity - [How to fine these values](https://www.youtube.com/watch?v=42_4oP33euk)
+
 5. A button will be placed on your article so the reader can add the items to the cart
 
 ### Permalink - Redirect to Checkout Page

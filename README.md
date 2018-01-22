@@ -13,11 +13,22 @@ Some code I have put together when editing the empire theme on Shopify
 
 ## Blog Recipe to Cart
 
+### Add list of items to cart for say aa Recipe
 Add a list of items such as in a recipe to the cart from blog page on Shopify.
 
 * Takes you to cart page not checkout page
-* Different for each Blog
+* Different for each Article
 * Can change the quantity of each item (Which you can't do with Permalinks)
+
+[Freakdesign Blog](https://freakdesign.com.au/blogs/news/129660999-how-to-create-a-button-to-let-customers-repeat-their-previous-order) - How to create a button to let customers repeat their previous order
+
+1. Create a snippet in Shopify with
+2. Add this to your article page code where ever you want it
+```
+{% include 'recipe-to-cart' %}
+```
+3. On the article editer you can edit the code and past the following
+4. Then add the variant_id, product_id and quantity - [How to fine these values](https://support.qooqee.com/hc/en-us/articles/115004589708-How-to-Find-Shopify-Product-ID-Number)
 
 ### Redirect to Checkout Page
 [Shopify Support](https://help.shopify.com/themes/customization/cart/use-permalinks-to-preload-cart) - Use permalinks to pre-load the cart

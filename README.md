@@ -5,4 +5,4 @@ https://www.pixelunion.net/themes/empire/
 
 Great place to get some sneaky tips: https://freakdesign.com.au/
 
-![alt text](https://github.com/pargyrop/shopify/blob/master/Search Placeholder Random/searchPlaceholderRandomText.gif)
+![alt text](https://github.com/pargyrop/shopify/blob/master/Search_Placeholder_Random/searchPlaceholderRandomText.gif)

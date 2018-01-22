@@ -1,5 +1,7 @@
 # Shopify
 
+# Awesome README [![Awesome]
+
 Some code I have put together when editing the empire theme on Shopify
 
 ### Table of content

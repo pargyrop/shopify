@@ -4,8 +4,10 @@ Some code I have put together when editing the empire theme on Shopify
 
 ### Table of content
 
-- [Blog Recipe to Cart](#blog-recipe-to-cart)
-- [Search Placeholder Random Text](#search-placeholder-random-text)
+- [Hacked together by me](#blog-recipe-to-cart)
+  - [Blog Recipe to Cart](#blog-recipe-to-cart)
+  - [Search Placeholder Random Text](#search-placeholder-random-text)
+  - [Product Price Label Changed with Tags](#product-price-label-changed-with-tags)
 - [More Cool Shopify Tricks](#more-cool-shopify-tricks)
 - [Credits](#credits)
 

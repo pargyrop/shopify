@@ -2,10 +2,18 @@
 
 Some code I have put together when editing the empire theme on Shopify
 
-## Built With
+### Built With
 
 * [Pixel Union](https://www.pixelunion.net/themes/empire/) - Website Theme
 * [Freak Design](https://freakdesign.com.au/) - Great place to get some sneaky tips
+
+
+## Table of content
+
+- [Blog Recipe to Cart](#blog-recipe-to-cart)
+- [Search Placeholder Random Text](#search-placeholder-random-text)
+- [Cool Things](#cool-things)
+
 
 ## Blog Recipe to Cart
 
@@ -36,9 +44,10 @@ http://yourstore.com/cart/add?id[]=#{variant_id}&id[]=#{variant_id}
 http://your-store.myshopify.com/cart/add?id[]=70881412&id[]=70881382
 ```
 
-
 ## Search Placeholder Random Text
 
 Selects a random array item for search bar placeholder from an array.
 
 ![alt text](https://github.com/pargyrop/shopify/blob/master/Search_Placeholder_Random/searchPlaceholderRandomText.gif)
+
+## Cool Things

@@ -2,7 +2,7 @@
 
 Some code I have put together when editing the empire theme on Shopify
 
-## Built With
+### Built With
 
 * [Pixel Union](https://www.pixelunion.net/themes/empire/) - Website Theme
 * [Freak Design](https://freakdesign.com.au/) - Great place to get some sneaky tips
